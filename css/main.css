@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  padding: 1em;
+}
+
+.sort-table a {
+  text-decoration: none;
+}
+
+.sort-table a.delete {
+  color: red;
+  font-size: 8pt;
+}
+
+.sort-table th:hover {
+  cursor: pointer;
+}
+
+.sort-table th.selected::after {
+  content: '▼';
+  position: absolute;
+  margin-left: 0.7em;
+  margin-top: 0.7em;
+  font-style: normal;
+  font-size: 6pt;
+}
+
+.sort-table th.selected.desc::after {
+  content: '▲';
+}
+
+.sort-table td {
+  text-transform: capitalize;
+}
+
+.flash-message {
+  color: red;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.flash-message.flashing {
+  opacity: 1;
+}
+
